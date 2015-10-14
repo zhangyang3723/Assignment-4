@@ -17,38 +17,22 @@ public class MaxNum {
 
 	}
 
-//	public static void main(String[] args) {
+	public static void main(String[] args) {
 
-//		Scanner input = new Scanner(System.in);
-//		System.out.println("please enter a array, press Control+D to finish.");
-//		ArrayList<Integer> arrList = new ArrayList<>();
-//		while (input.hasNextInt()) {
-//			arrList.add(input.nextInt());
-//		}
-//		int[] arr = new int[arrList.size()];
-//		for (int i = 0; i < arrList.size(); i++) {
-//			arr[i] = arrList.get(i);
-//		}
-//		input.close();
-//
-	//	MaxNum test = new MaxNum();
-//
-//		test.seleMax(arr);
-//		int[] a =null;
-		 //int[] a = {12,34,2,1,67};
-		// System.out.println(test.seleMax(numbers));
-		
-		
-//		try{
-//			test.seleMax(a);
-//		} catch (Exception e) {
-//			System.out.println("error!");
-//		}
-		
-		
-		
-		
+		Scanner input = new Scanner(System.in);
+		System.out.println("please enter a array, press Control+D to finish.");
+		ArrayList<Integer> arrList = new ArrayList<>();
+		while (input.hasNextInt()) {
+			arrList.add(input.nextInt());
+		}
+		int[] arr = new int[arrList.size()];
+		for (int i = 0; i < arrList.size(); i++) {
+			arr[i] = arrList.get(i);
+		}
+		input.close();
 
-	//}
-
+		MaxNum test = new MaxNum();
+		System.out.println("Max is "+test.seleMax(arr));
+		
+	}
 }
