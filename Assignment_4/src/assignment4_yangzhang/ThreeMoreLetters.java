@@ -9,6 +9,10 @@ public class ThreeMoreLetters {
 		StringBuilder sb = new StringBuilder();
 		ArrayList<String> returnlist = new ArrayList<>();
 		for(int i = 0; i < charArray.length; i++){
+			// you ignore empty space only, not ignore punctuation.
+			// for example, if you test Prof.'s example:
+			// "Java is a cool OOP. It doesnt have multiple inheritance"
+			// you will also print out OOP..
 			if(charArray[i] == ' '){
 				returnlist.add(sb.toString());
 				sb.delete(0,sb.length());

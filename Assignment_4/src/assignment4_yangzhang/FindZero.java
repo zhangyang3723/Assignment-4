@@ -2,6 +2,7 @@ package assignment4_yangzhang;
 
 public class FindZero {
 
+	// this function is not quite correct, if the input starts with [0, 0, ...], it can not find the first ones.
 	public void countZeroNum(int[] arr){
 		for(int i=1; i<= arr.length-1;i++){
 			if (arr[i-1]==1 && arr[i]==0 && arr[i+1]==0){

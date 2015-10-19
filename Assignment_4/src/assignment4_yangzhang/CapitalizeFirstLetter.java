@@ -8,6 +8,7 @@ public class CapitalizeFirstLetter {
 	ArrayList<String> splitWords(String a){
 		char[] charArray = a.toCharArray();
 		StringBuilder sb = new StringBuilder();
+		// replace it with List<String> returnList = new ArrayList<>
 		ArrayList<String> returnlist = new ArrayList<>();
 		for(int i = 0; i < charArray.length; i++){
 			if(charArray[i] == ' '){
@@ -34,6 +35,7 @@ public class CapitalizeFirstLetter {
 	}
 	
 	String capitalizeOneWord(String word) {
+		// indentation. if the input string start with empty space, you will get null pointer exception.
 		   return Character.toUpperCase(word.charAt(0)) + word.substring(1);
 		}
 	
